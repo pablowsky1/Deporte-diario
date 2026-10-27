@@ -161,7 +161,7 @@ function im(i){var f=i.files[0];if(!f)return;var r=new FileReader();r.onload=()=
 function rs(){if(confirm("¿Borrar todo tu historial y volver al plan por defecto?")){S={plan:JSON.parse(JSON.stringify(DEFP)),log:{},rest:60,kmGoal:15,theme:S.theme,shoes:[],lastShoe:""};upd(1);rpl()}}
 function th(){var c=document.documentElement.dataset.theme||(matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");S.theme=c=="dark"?"light":"dark";document.documentElement.dataset.theme=S.theme;save()}
 /* ===== NUBE Y PERFILES ===== */
-var FB={apiKey:"",authDomain:"",projectId:"",appId:""}; /* pega aquí tu firebaseConfig */
+var FB={apiKey:"AIzaSyAIFE3kvwCElu0ZOzF6zvqVxUvwnRztp1k",authDomain:"pulso-entrenamiento.firebaseapp.com",projectId:"pulso-entrenamiento",appId:"1:370742068331:web:5c5a40e5c9d0666b1a9d2e"}; /* pega aquí tu firebaseConfig */
 var EM=["🦊","🐼","🐯","🦁","🐸","🐙","🦄","🐵"],DB=null,cur="",LST=[],edit=0,tmr=0;
 var fresh=()=>({plan:JSON.parse(JSON.stringify(DEFP)),log:{},rest:60,kmGoal:15,theme:"",ts:0,shoes:[],lastShoe:""});
 var L=k=>{try{return localStorage.getItem(k)}catch(e){return null}},Ls=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}},cl=t=>{$("cl").textContent=t};
